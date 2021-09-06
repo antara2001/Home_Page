@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: 'TT Norms';
+    src: url(TTNorms-Regular.otf);
+    
+  }
+#portrait{
+    display: none;
+}
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape){
+    #landscape{display: block;
+        
+   }
+    #portrait{display: none;}
+    
+    
+}
+@media screen and (min-width:320px) and (max-width:767px) and (orientation:portrait){
+    #landscape{display: none;}
+    #portrait{
+        margin-top: 10vh;
+       color: white;
+        display: block;
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: bold;
+        
+    }
+    body{
+        background-color: #0F0F12;
+    }
+}
+.main{
+    background: url(First\ \(2\)\ 1.svg);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+   
+   width: 100%;
+   height: 100%;
+    
+  
+}
+.location{
+    position: absolute;
+width: 3.59%;
+height: 6.481%;
+left: 2.083%;
+top: 3.88%;
+
+background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
+box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
+border-radius: 50%;
+
+}
+.locationlogo{
+    position: absolute;
+width: 4.739%;
+height: 4.35%;
+left: 1.51%;
+top: 5.83%;
+}
+.notification{
+    position: absolute;
+width: 3.645%;
+height: 6.574%;
+left: 81.35%;
+top: 3.88%;
+background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
+box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
+border-radius: 50%;
+}
+.bell{
+    position: absolute;
+width: 1.631%;
+height: 3.48%;
+left: 82.34%;
+top: 5.37%;
+}
+.notinumber{
+    position: absolute;
+width: 0.989%;
+height: 1.759%;
+left: 83.333%;
+top: 5.185%;
+border-radius: 50%;
+background: #E22128;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.notinumber p{
+    font-family: TT Norms;
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+}
+.briefcase{
+    position: absolute;
+    width: 3.645%;
+height: 6.57%;
+left: 86.66%;
+top: 3.88%;
+background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
+box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
+border-radius: 50%;
+}
+.briefcaselogo{
+    position: absolute;
+    width: 1.77%;
+    height: 2.96%;
+    left: 87.60%;
+    top: 5.648%;
+    
+}
+.profile{
+    position: absolute;
+width: 5.572%;
+height: 9.90%;
+left: 92.29%;
+top: 1.851%;
+border-radius: 50%;
+
+filter: drop-shadow(-4px -4px 6px rgba(255, 255, 255, 0.25)) drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.25));
+
+}
+
+.profile .profileimg img{
+    width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  
+}
+
+/* .profileimg{
+    position: absolute;
+    width: 5.572%;
+    height: 9.90%;
+    left: 92.29%;
+    top: 1.851%;
+    border-radius: 50%;
+} */
+.navigate{
+    position: absolute;
+    left: 39.47%;
+    /* top: 92.77%; */
+    bottom: 0;
+    border-bottom: 78px solid #1a1a1a;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+	width: 18.02%;
+    
+
+	
+    
+   
+}
+
+/* .navigate img{
+   
+   
+
+width: 18.02%;
+height: 7.22%;
+
+} */
+.navigatelogo{
+    /* position: absolute;
+
+left: 46.718%;
+top: 94.07%; */
+width: 13.59%;
+height: 1.11%;
+
+
+
+}
+.navigatetext{
+    /* position: absolute;
+width: 15.677%;
+height: 3.33%;
+left: 40.625%;
+top: 96.48%; */
+
+font-family: TT Norms;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+
+color: #FFFFFF;
+
+}
+@media only screen and (max-width:641px){
+    .navigate{
+        top: 89%;
+        border-bottom: 39px solid #1a1a1a;
+    }
+    .navigatetext{
+      margin-top: -5px;
+        font-size: 8px;
+    }
+    .navigatelogo{
+        width: 25px;
+        
+    }
+    .notinumber p{
+        font-size: 7px;
+    }
+
+    
+}
+@media only screen and (min-width:642px) and (max-width:668px){
+    .navigate{
+        top: 89.3%;
+        border-bottom: 39px solid #1a1a1a;
+    }
+    .navigatetext{
+      margin-top: -5px;
+        font-size: 10px;
+    }
+    .navigatelogo{
+        width: 25px;
+        
+    }
+    .notinumber p{
+        font-size: 7px;
+    }
+}
+@media only screen and (min-width:667px) and (max-width:721px){
+    .navigate{
+        top: 89.1%;
+        border-bottom: 39px solid #1a1a1a;
+    }
+    .navigatetext{
+      margin-top: -5px;
+        font-size: 10px;
+    }
+    .navigatelogo{
+        width: 25px;
+        
+    }
+    .notinumber p{
+        font-size: 7px;
+    }
+}
+@media only screen and (min-width:722px) and (max-width:732px){
+   
+    .navigate{
+        border-bottom: 48px solid #1a1a1a;
+       }
+    .navigatetext{
+        
+        font-size: 13px;
+    }
+    
+    .navigatelogo{
+        margin-top:5% ;
+        width: 26%;
+        
+    }
+    .notinumber p{
+        font-size: 7px;
+    }
+}
+@media only screen and (min-width:733px) and (max-width:813px){
+   
+    .navigate{
+        border-bottom: 48px solid #1a1a1a;
+       }
+    .navigatetext{
+      
+        font-size: 14px;
+    }
+    
+    .navigatelogo{
+        margin-top:4% ;
+        width: 20%;
+        
+    }
+    .notinumber p{
+        font-size: 9px;
+    }
+}
+@media only screen and (min-width:814px) and (max-width:1025px){
+    .navigate{
+        border-bottom: 68px solid #1a1a1a;
+       }
+    .navigatetext{
+        margin-top:3% ;
+        font-size: 16px;
+    }
+    
+    .navigatelogo{
+        margin-top:4% ;
+        width: 20%;
+        
+    }
+    .notinumber p{
+        font-size: 9px;
+    }
+    
+    .profile{
+        top: 3%;
+       
+       
+    }
+    .profileimg{
+        top: 3%;
+        
+    }
+}
+@media only screen and (min-width:1026px) and (max-width:1367px){
+    .navigate{
+        border-bottom: 68px solid #1a1a1a;
+       }
+    .navigatetext{
+        margin-top:3% ;
+        font-size: 16px;
+    }
+    
+    .navigatelogo{
+        margin-top:4% ;
+        width: 20%;
+        
+    }
+    .notinumber p{
+        font-size: 9px;
+    }
+}
+@media only screen and (min-width:1368px) and (max-width:1919px){
+   .navigate{
+    border-bottom: 68px solid #1a1a1a;
+   }
+    .navigatetext{
+        margin-top:3% ;
+        font-size: 16px;
+    }
+    .navigatelogo{
+        margin-top:5% ;
+        width: 20%;
+        
+    }
+    .notinumber p{
+        font-size: 9px;
+    }
+}
+@media only screen and (min-width:1920px){
+    .navigatelogo{
+        margin-top: 3%;
+        width: 69px;
+        
+    }
+    .navigatetext{
+      
+        margin-top: 1%;
+    }
+}
