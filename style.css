@@ -211,8 +211,8 @@ color: #FFFFFF;
         border-bottom: 39px solid #1a1a1a;
     }
     .navigatetext{
-      margin-top: -5px;
-        font-size: 8px;
+        line-height: 10px;
+        font-size: 7px;
     }
     .navigatelogo{
         width: 25px;
@@ -230,9 +230,9 @@ color: #FFFFFF;
         border-bottom: 39px solid #1a1a1a;
     }
     .navigatetext{
-      margin-top: -5px;
-        font-size: 10px;
-    }
+        line-height: 20px;
+          font-size: 7px;
+      }
     .navigatelogo{
         width: 25px;
         
@@ -247,9 +247,9 @@ color: #FFFFFF;
         border-bottom: 39px solid #1a1a1a;
     }
     .navigatetext{
-      margin-top: -5px;
-        font-size: 10px;
-    }
+        line-height: 6px;
+          font-size: 7px;
+      }
     .navigatelogo{
         width: 25px;
         
@@ -263,10 +263,10 @@ color: #FFFFFF;
     .navigate{
         border-bottom: 48px solid #1a1a1a;
        }
-    .navigatetext{
-        
-        font-size: 13px;
-    }
+       .navigatetext{
+        line-height: 20px;
+          font-size: 9px;
+      }
     
     .navigatelogo{
         margin-top:5% ;
@@ -282,10 +282,11 @@ color: #FFFFFF;
     .navigate{
         border-bottom: 48px solid #1a1a1a;
        }
-    .navigatetext{
+     .navigatetext{
+        line-height: 20px;
+          font-size: 15px;
+      }
       
-        font-size: 14px;
-    }
     
     .navigatelogo{
         margin-top:4% ;
@@ -301,8 +302,8 @@ color: #FFFFFF;
         border-bottom: 68px solid #1a1a1a;
        }
     .navigatetext{
-        margin-top:3% ;
-        font-size: 16px;
+    line-height: 26px;
+        font-size: 14px;
     }
     
     .navigatelogo{
@@ -333,11 +334,10 @@ color: #FFFFFF;
         font-size: 16px;
     }
     
-    .navigatelogo{
-        margin-top:4% ;
-        width: 20%;
-        
-    }
+    .navigatetext{
+        line-height: 26px;
+          font-size: 15px;
+      }
     .notinumber p{
         font-size: 9px;
     }
@@ -346,10 +346,10 @@ color: #FFFFFF;
    .navigate{
     border-bottom: 68px solid #1a1a1a;
    }
-    .navigatetext{
-        margin-top:3% ;
-        font-size: 16px;
-    }
+   .navigatetext{
+    line-height: 20px;
+      font-size: 15px;
+  }
     .navigatelogo{
         margin-top:5% ;
         width: 20%;
