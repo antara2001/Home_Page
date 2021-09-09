@@ -134,6 +134,7 @@ border-radius: 50%;
 
 filter: drop-shadow(-4px -4px 6px rgba(255, 255, 255, 0.25)) drop-shadow(4px 4px 9px rgba(0, 0, 0, 0.25));
 
+
 }
 
 .profile .profileimg img{
@@ -201,7 +202,7 @@ font-family: TT Norms;
 font-style: normal;
 font-weight: 500;
 font-size: 22px;
-line-height: 26px;
+
 text-align: center;
 letter-spacing: 0.04em;
 height: 60%;
@@ -214,7 +215,7 @@ align-items: center;
 @media only screen and (max-width:641px){
     
     .navigatetext{
-        line-height: 10px;
+      
         font-size: 7px;
     }
     /* .navigatelogo{
@@ -235,7 +236,7 @@ align-items: center;
 @media only screen and (min-width:642px) and (max-width:668px){
    
     .navigatetext{
-        line-height: 15px;
+      
           font-size: 7px;
       }
       .navigatelogo{
@@ -250,7 +251,7 @@ align-items: center;
 @media only screen and (min-width:667px) and (max-width:721px){
    
     .navigatetext{
-        line-height: 6px;
+       
           font-size: 7px;
       }
       .navigatelogo{
@@ -266,7 +267,7 @@ align-items: center;
    
    
        .navigatetext{
-        line-height: 5px;
+      
           font-size: 8px;
       }
     
@@ -284,7 +285,7 @@ align-items: center;
    
    
      .navigatetext{
-        line-height: 10px;
+       
           font-size: 10px;
          
       }
@@ -303,13 +304,13 @@ align-items: center;
 @media only screen and (min-width:814px) and (max-width:1025px){
    
     .navigatetext{
-    line-height: 16px;
+    
         font-size: 14px;
     }
     
     .navigatelogo{
         margin-top:4% ;
-        width: 26%;
+        width: 20%;
         
     }
     .notinumber p{
@@ -330,7 +331,7 @@ align-items: center;
    
     .navigatetext{
     
-        font-size: 12px;
+        font-size: 15px;
     }
     .navigatelogo{
         margin-top:4% ;
@@ -338,10 +339,7 @@ align-items: center;
         
     }
     
-    .navigatetext{
-        line-height: 26px;
-          font-size: 15px;
-      }
+   
     .notinumber p{
         font-size: 9px;
     }
@@ -349,7 +347,7 @@ align-items: center;
 @media only screen and (min-width:1368px) and (max-width:1919px){
   
    .navigatetext{
-    line-height: 12px;
+  
       font-size: 15px;
   }
     .navigatelogo{
@@ -364,11 +362,8 @@ align-items: center;
 @media only screen and (min-width:1920px){
     .navigatelogo{
         margin-top:2% ;
-        width: 26%;
+        width: 20%;
         
     }
-    .navigatetext{
-      
-        margin-top: 1%;
-    }
+    
 }
