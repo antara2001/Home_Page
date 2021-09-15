@@ -10,9 +10,11 @@
   }
 #portrait{
     display: none;
+   
 }
 @media screen and (min-width:320px) and (max-width:767px) and (orientation:landscape){
     #landscape{display: block;
+       
         
    }
     #portrait{display: none;}
@@ -31,11 +33,26 @@
         
     }
     body{
-        background-color: #0F0F12;
+        background-color: black;
+        
     }
 }
+#fullscreen{
+   
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.82) , rgba(0, 0, 0, 0.82) );
+    justify-content: center;
+   
+}
 .main{
-    background: url(First\ \(2\)\ 1.svg);
+    /* background: rgba(0, 0, 0, 0.82),url(12\ 1.svg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.82)
+    , rgba(0, 0, 0, 0.82)
+    ),url("12\ 1.svg");
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,85 +60,55 @@
    
    width: 100%;
    height: 100%;
+   z-index: -1;
     
   
 }
 .location{
     position: absolute;
-width: 3.59%;
-height: 6.481%;
+width: 7vh;
+height: 7vh;
 left: 2.083%;
 top: 3.88%;
 
 background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
 box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
 border-radius: 50%;
-
-}
-.locationlogo{
-    position: absolute;
-width: 4.739%;
-height: 4.35%;
-left: 1.51%;
-top: 5.83%;
-}
-.notification{
-    position: absolute;
-width: 3.645%;
-height: 6.574%;
-left: 81.35%;
-top: 3.88%;
-background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
-box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
-border-radius: 50%;
-}
-.bell{
-    position: absolute;
-width: 1.631%;
-height: 3.48%;
-left: 82.34%;
-top: 5.37%;
-}
-.notinumber{
-    position: absolute;
-width: 0.989%;
-height: 1.759%;
-left: 83.333%;
-top: 5.185%;
-border-radius: 50%;
-background: #E22128;
 display: flex;
 align-items: center;
 justify-content: center;
-}
-.notinumber p{
-    font-family: TT Norms;
-font-style: normal;
-font-weight: 500;
-font-size: 17px;
-line-height: 20px;
-text-align: center;
-letter-spacing: 0.04em;
-
-color: #FFFFFF;
 
 }
+.locationlogo{
+   
+width: 100%;
+height: 100%;
+margin-top: 20%;
+}
+
+
+
 .briefcase{
     position: absolute;
-    width: 3.645%;
-height: 6.57%;
+    width: 7vh;
+height: 7vh;
 left: 86.66%;
 top: 3.88%;
 background: linear-gradient(108.82deg, #484863 -0.91%, #1D1D3F 100.09%);
 box-shadow: -4.91021px -4.91021px 22.1038px rgba(78, 86, 97, 0.04), 4.91259px 4.91259px 14.7378px rgba(0, 0, 0, 0.39);
 border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .briefcaselogo{
-    position: absolute;
+    /* position: absolute;
     width: 1.77%;
     height: 2.96%;
     left: 87.60%;
-    top: 5.648%;
+    top: 5.648%; */
+    height: 50%;
+    width: 50%;
     
 }
 .profile{
@@ -143,15 +130,279 @@ filter: drop-shadow(-4px -4px 6px rgba(255, 255, 255, 0.25)) drop-shadow(4px 4px
   border-radius: 50%;
   
 }
+.yourbriefcase{
+position: absolute;
+width: 47.083%;
+height: 60.185%;
+margin-left: 24.42%;
+top:22.40%;
+background: linear-gradient(118.3deg, #0E0E11 2.38%, #20263F 97.78%);
 
-/* .profileimg{
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+display: flex;
+
+flex-direction: column;
+justify-content: center;
+
+
+
+}
+.loc{
+    
     position: absolute;
-    width: 5.572%;
-    height: 9.90%;
-    left: 92.29%;
-    top: 1.851%;
-    border-radius: 50%;
-} */
+    width: 10.239%;
+   
+    height:8.35%;
+    left: 90%;
+    top: 2%;
+    
+}
+.loc img{
+    height: 100%;
+    width: 100%;
+}
+.urbrief{
+    
+position: absolute;
+top: 4%;
+width: 100%;
+font-family: TT Norms;
+font-style: normal;
+font-weight: bold;
+font-size: 35.524px;
+
+text-align: center;
+
+
+
+color: #FFFFFF;
+}
+.button{
+   
+
+position: absolute;
+
+width: 60%;
+top: 17%;
+left: 20%;
+border: 0.789423px solid #797979;
+box-sizing: border-box;
+border-radius: 3.94711px;
+display: flex;
+
+
+
+}
+.notepad{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90.75deg, #E22128 19.86%, #7C1317 103.95%);
+border: 1.57885px solid #7C1317;
+    box-sizing: border-box;
+border-radius: 3.94711px;
+font-family: TT Norms;
+font-style: normal;
+font-weight: bold;
+font-size: 10.2625px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.document{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+box-sizing: border-box;
+border-radius: 3.94711px;
+font-family: TT Norms;
+font-style: normal;
+font-weight: bold;
+font-size: 10.2625px;
+line-height: 12px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+.doc{
+    position: absolute;
+    height: 65%;
+    width: 90%;
+    top: 28%;
+    margin-left: 5%;
+    margin-right: 5%;
+   
+    display: flex;
+    
+}
+.page{
+    width: 15%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+}
+.text{
+    width: 85%;
+  
+    display: flex;
+    flex-direction: column;
+    
+}
+.line{
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.21);
+}
+.page1{
+   
+    height: 33.33%;
+  
+    display: flex;
+ 
+    flex-direction: column;
+    margin-bottom: 10%;
+  
+    
+}
+.page1 p{
+    /* height: 20%; */
+    display: flex;
+    font-family: TT Norms;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+
+justify-content: flex-start;
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+margin-bottom: 3%;
+}
+.page1text{
+   
+    height: 80%;
+    width: 80%;
+    
+    background-color: #1C1D22;
+    /* or 12px */
+ 
+    text-transform: capitalize;
+    
+    color: #FFFFFF;
+   display: flex;
+   justify-content: center;
+  
+ 
+    
+    padding: 6%;
+   
+    
+}
+.page1text p{
+    font-family: TT Norms;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 7px;
+    text-align: start;
+   
+    /* line-height: 171.02%; */
+   
+}
+
+.one{
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.save{
+    height: 100%;
+    width: 9%;
+   
+    border: 1px solid rgba(255, 255, 255, 0.21);
+    box-sizing: border-box;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.option{
+    width: 12%;
+   
+  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.two{
+   
+    height: 80%;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+   
+  
+   
+   
+   
+}
+.two p{
+   
+   text-align: start;
+    width: 100%;
+    height: 93%;
+    font-family: TT Norms;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 171.02%;
+/* or 24px */
+
+text-transform: capitalize;
+
+color: #FFFFFF;
+
+overflow-y: scroll;
+
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5.74px;
+   
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2D2D39;;
+    border-radius: 19.665px;
+
+  }
+   
+ 
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #E22128 0%, rgba(226, 33, 40, 0.68) 100%);
+    border-radius: 19.665px;
+
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #E22128 0%, rgba(226, 33, 40, 0.68) 100%);
+  }
+
+
 .navigate{
     position: absolute;
     left: 39.47%;
@@ -164,15 +415,14 @@ filter: drop-shadow(-4px -4px 6px rgba(255, 255, 255, 0.25)) drop-shadow(4px 4px
 }
 
 .navigatebox{
-    /* border-bottom: 78px solid #1a1a1a;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-    width: 100%; */
+   
     width: 100%;
   height: 100%;
-  /* -webkit-clip-path: polygon(0 0, 100% 20%, 100% 80%, 0% 100%); */
+ 
   clip-path: polygon(16% 0%, 85% 0%, 100% 100%, 0% 100%);
-  background-color: #1a1a1a;
+  background: linear-gradient(134.23deg, #181823 -4.21%, #30303F 107.66%);
+box-shadow: 4px 4px 11px rgba(35, 35, 47, 0.5);
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,12 +455,16 @@ font-size: 22px;
 
 text-align: center;
 letter-spacing: 0.04em;
-height: 15%;
+height: 20%;
 color: #FFFFFF;
 
 display: flex;
 align-items: center;
 
+}
+#portrait img{
+    width: 70%;
+    height: 70%;
 }
 @media only screen and (max-width:641px){
     
@@ -218,18 +472,47 @@ align-items: center;
       
         font-size: 7px;
     }
-    /* .navigatelogo{
-        width: 25px;
-        
-    } */
+    
     .navigatelogo{
         margin-top:2% ;
         width: 19%;
         
     }
-    .notinumber p{
+    .name{
         font-size: 7px;
     }
+    .button{
+        height: 6%;
+    }
+    .btnview,.btndownload{
+        font-size: 4px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 4px;
+    }
+    ::-webkit-scrollbar {
+        width: 1.74px;
+       
+      }
+      .two p{
+          font-size: 4px;
+      }
+      .save{
+        border-radius: 0px 12px 12px 0px;
+      }
+      .save img, .option img{
+          height: 10px;
+          width: 10px;
+      }
+      .page1 p{
+          font-size: 4px;
+      }
+      .page1text p{
+          font-size: 3px;
+      }
 
     
 }
@@ -244,8 +527,40 @@ align-items: center;
         width: 20%;
         
     }
-    .notinumber p{
+    .name{
         font-size: 7px;
+    }
+    .button{
+        height: 6%;
+    }
+    .btnview,.btndownload{
+        font-size: 4px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 4px;
+    }
+    ::-webkit-scrollbar {
+        width: 1.74px;
+       
+      }
+      .two p{
+        font-size: 4.5px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 10px;
+        width: 10px;
+    }
+    .page1 p{
+        font-size: 3.5px;
+    }
+    .page1text p{
+        font-size: 3px;
     }
 }
 @media only screen and (min-width:667px) and (max-width:721px){
@@ -259,8 +574,40 @@ align-items: center;
         width: 20%;
         
     }
-    .notinumber p{
+    .name{
         font-size: 7px;
+    }
+    .button{
+        height: 8%;
+    }
+    .btnview,.btndownload{
+        font-size: 5px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 5px;
+    }
+    ::-webkit-scrollbar {
+        width: 1.74px;
+       
+      }
+      .two p{
+        font-size: 4px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 10px;
+        width: 10px;
+    }
+    .page1 p{
+        font-size: 4px;
+    }
+    .page1text p{
+        font-size: 3px;
     }
 }
 @media only screen and (min-width:722px) and (max-width:732px){
@@ -277,8 +624,40 @@ align-items: center;
        
         
     }
-    .notinumber p{
+    .name{
         font-size: 7px;
+    }
+    .button{
+        height: 8%;
+    }
+    .btnview,.btndownload{
+        font-size: 5px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 5px;
+    }
+    ::-webkit-scrollbar {
+        width: 1.74px;
+       
+      }
+      .two p{
+        font-size: 4.5px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 10px;
+        width: 10px;
+    }
+    .page1 p{
+        font-size: 4px;
+    }
+    .page1text p{
+        font-size: 3px;
     }
 }
 @media only screen and (min-width:733px) and (max-width:813px){
@@ -297,8 +676,40 @@ align-items: center;
        
         
     }
-    .notinumber p{
-        font-size: 9px;
+    .name{
+        font-size: 7px;
+    }
+    .button{
+        height: 8%;
+    }
+    .btnview,.btndownload{
+        font-size: 5px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 5px;
+    }
+    ::-webkit-scrollbar {
+        width: 1.74px;
+       
+      }
+      .two p{
+        font-size: 4px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 10px;
+        width: 10px;
+    }
+    .page1 p{
+        font-size: 4px;
+    }
+    .page1text p{
+        font-size: 3px;
     }
 }
 @media only screen and (min-width:814px) and (max-width:1025px){
@@ -313,9 +724,25 @@ align-items: center;
         width: 20%;
         
     }
-    .notinumber p{
-        font-size: 9px;
+    .name{
+        font-size: 12px;
     }
+    .button{
+        height: 9%;
+    }
+    .btnview,.btndownload{
+        font-size: 8px;
+    }
+    .urbrief{
+        font-size: 17px;
+    }
+    .notepad, .document{
+        font-size: 8px;
+    }
+    ::-webkit-scrollbar {
+        width: 2.74px;
+       
+      }
     
     .profile{
         top: 3%;
@@ -325,6 +752,22 @@ align-items: center;
     .profileimg{
         top: 3%;
         
+    }
+    .two p{
+        font-size: 5.5px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 13px;
+        width: 13px;
+    }
+    .page1 p{
+        font-size: 5px;
+    }
+    .page1text p{
+        font-size: 5px;
     }
 }
 @media only screen and (min-width:1026px) and (max-width:1367px){
@@ -340,8 +783,38 @@ align-items: center;
     }
     
    
-    .notinumber p{
+    .name{
+        font-size: 13px;
+    }
+   
+    .btnview,.btndownload{
+        font-size: 10px;
+    }
+    .urbrief{
+        font-size: 14px;
+    }
+    .notepad, .document{
+        font-size: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 2.74px;
+       
+      }
+      .two p{
         font-size: 9px;
+    }
+    .save{
+      border-radius: 0px 12px 12px 0px;
+    }
+    .save img, .option img{
+        height: 15px;
+        width: 15px;
+    }
+    .page1 p{
+        font-size: 6px;
+    }
+    .page1text p{
+        font-size: 6px;
     }
 }
 @media only screen and (min-width:1368px) and (max-width:1919px){
@@ -355,9 +828,40 @@ align-items: center;
         width: 20%;
         
     }
-    .notinumber p{
+    .name{
+        font-size: 12px;
+    }
+    .button{
+        height: 6%;
+    }
+    .btnview,.btndownload{
         font-size: 9px;
     }
+    .urbrief{
+        font-size: 21px;
+    }
+    .notepad, .document{
+        font-size: 9px;
+    }
+    ::-webkit-scrollbar {
+        width: 2.74px;
+       
+      }
+      .two p{
+        font-size:  12px;
+    }
+    
+    
+    .page1 p{
+        font-size: 5px;
+    }
+    .page1text p{
+        font-size: 6px;
+    }
+    /* #page3{
+        display: none;
+    } */
+   
 }
 @media only screen and (min-width:1920px){
     .navigatelogo{
