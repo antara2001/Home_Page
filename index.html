@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Briefcase-Notepad</title>
-  
+    <title>Home</title>
 </head>
 <body>
     <div id="landscape">
     <div class="main">
         <div class="location"> <img class="locationlogo" src="VouchPro Logo colored 1.svg"></div>
        
-      
+        <div class="notification"> <img src="Group 16.svg" class="bell"></div>
+       
+        <div class="notinumber"><p>4</p></div>
         <div class="briefcase"> <img src="briefcase 1.svg" class="briefcaselogo"></div>
        
         <div class="profile">
@@ -22,28 +23,7 @@
             </div>
            
         </div>
-        <div class="yourbriefcase">
-           <div class="urbrief"><div>Your Briefcase</div></div>
-            <div class="loc"> <img src="VouchPro Logo colored 1.svg"></div>
-
-           <div class="button"><div class="document">BUSINESS-DOCUMENTS</div><div class="notepad">NOTEPAD</div></div>
-          <center> <div class="doc">
-               <div class="page">
-                   <div class="page1"><p>Page 1</p><div class="page1text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula sollicitudin venenatis. Mauris ut massa sed felis rhoncus vulputate et eu tellus.</p> </div></div>
-                   <div class="page1"><p>Page 2</p><div class="page1text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula sollicitudin venenatis. Mauris ut massa sed felis rhoncus vulputate et eu tellus.</p> </div></div>
-                   <div class="page1" id="page3"><p>Page 3</p><div class="page1text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula sollicitudin venenatis. Mauris ut massa sed felis rhoncus vulputate et eu tellus. </p></div></div>
-               </div>
-               <div class="line"></div>
-               <div class="text">
-                   <div class="one"><div class="save"><img src="Vector (14).svg"></div>
-                <div class="option"><img src="Vector (16).svg"><img src="Vector (15).svg"></div></div>
-                   <div class="two"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula sollicitudin venenatis. Mauris ut massa sed felis rhoncus vulputate et eu tellus. Ut facilisis lacus urna, non posuere magna ullamcorper quis. Pellentesque vel metus ac libero semper auctor. Cras iaculis nec orci sed malesuada. Morbi condimentum gravida dolor, sed pharetra arcu sagittis vel. Vivamus sed augue elit. Nam ex tellus, finibus sit amet ante egestas, sollicitudin ultrices nisi. Vivamus id tellus ante. Sed pulvinar, nisl non semper varius, justo est finibus turpis, vitae pulvinar orci est quis magna. Ut auctor ante eu interdum tempus. Praesent consectetur tellus ac urna pellentesque, at porta enim fermentum. Quisque fringilla nunc a ultricies pulvinar. Cras non gravida mi. Donec molestie, nunc nec gravida consequat, mauris augue aliquet massa, ut condimentum nisi justo et mi. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    <br>
-                   Duis condimentum sapien dui, scelerisque efficitur mauris hendrerit ac. Proin vel finibus neque, et sagittis ligula. Morbi pharetra risus et cursus rutrum. Donec id congue risus. Fusce ornare eget odio eget sodales. Aliquam venenatis mi velit. Duis condimentum sapien dui, scelerisque efficitur mauris hendrerit ac. Proin vel finibus neque, et sagittis ligula. Morbi pharetra risus et cursus rutrum. Donec id congue risus. Fusce ornare eget odio eget sodales. Aliquam venenatis mi velit. Duis condimentum sapien dui, scelerisque efficitur mauris hendrerit ac. Proin vel finibus neque, et sagittis ligula. Morbi pharetra risus et cursus rutrum. Donec id congue risus. Fusce ornare eget odio eget sodales. Aliquam venenatis mi velit.</p></div>
-               </div>
-           </div></center>
-
-        </div>
+      
         <div class="navigate">
             <div class="navigatebox">
                 <img class="navigatelogo" src="Vector 1.svg">
@@ -51,45 +31,18 @@
             </div>
            
         </div>
-
        
-       
-        
-
-
-
-
-                  
-                   
-
-
-
     </div>
-      <div id="fullscreen">
-          <button>Click here for the full screen</button>
-      </div>
     
-
-
+    <div id="fullscreen">
+        <div class="fullscreendiv">Click here for the full screen view</div>
+    </div>
 
 </div>
 
 <div id="portrait"><center><img id="gif" src="45792-rotate-phone.gif"></center>
-    <center><button id="landscape1">Rotate Your Phone</button></center>
+    <center>Please rotate your phone</center>
 </div>
-
-
-<!-- <script>
-    document.onclick = function (event) {
-  if (document.fullscreenElement) {
-    document.exitFullscreen()
-      .then(() => console.log("Document Exited from Full screen mode"))
-      .catch((err) => console.error(err))
-  } else {
-    document.documentElement.requestFullscreen();
-  }
-}
-</script> -->
 
 
 
@@ -98,40 +51,19 @@
     var goFS = document.getElementById("fullscreen");
     goFS.addEventListener("click", ()=> {
         if (document.fullscreenElement) {
-    document.exitFullscreen()
+        document.exitFullscreen()
    
     //  .then(() => console.log("Document Exited from Full screen mode"))
     
     //   .catch((err) => console.error(err))
-      document.getElementById("fullscreen").style.visibility = "visible";
-  } else {
-    document.documentElement.requestFullscreen();
-    document.getElementById("fullscreen").style.visibility = "hidden";
+      document.getElementById("fullscreen").style.display = "block";
+     } else {
+        document.documentElement.requestFullscreen();
+        document.getElementById("fullscreen").style.display = "none";
    
    
   }
     });
   </script>
-
-
-
-
-
-
-<!-- <script>
-    if(document.querySelector("#landscape").requestFullscreen)
-	    document.querySelector("#landscape").requestFullscreen();
-    else if(document.querySelector("#landscape").webkitRequestFullScreen)
-	    document.querySelector("#landscape").webkitRequestFullScreen();
-</script> -->
-
-<!-- <script>
-    document.querySelector('#landscape')
-    .addEventListener('click', ()=>{
-        if(screenfull.isEnabled){
-            screenfull.toggle();
-        }
-    })
-</script> -->
 </body>
 </html>
